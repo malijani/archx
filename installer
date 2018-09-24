@@ -32,7 +32,7 @@ sleep 5
 if [ -e ./fakepkg ];then
 	FAKEPKG=$(pwd)/fakepkg && chmod +x fakepkg
 else
-	curl -s -o fakepkg https://gitlab.com/virtualdemon/archx/raw/master/fakepkg && chmod +x fakepkg  && FAKEPKG=$(pwd)/fakepkg
+	curl -s -o fakepkg https://raw.githubusercontent.com/virtualdemon/archx/master/fakepkg && chmod +x fakepkg  && FAKEPKG=$(pwd)/fakepkg
 fi
 
 # Check is /mnt used as mountpoint?
@@ -106,9 +106,9 @@ genfstab -U -p /mnt > /mnt/etc/fstab && cat /mnt/etc/fstab
 if [ -e ./auto_chroot ];then
   cp ./auto_chroot /mnt/tmp/auto_chroot
 elif [[ $(ping -c 2 google.com) ]];then
-	echo -e "${purple}Downloading auto_chroot script from gitlab.com/virtualdemon/archx/raw/master/auto_chroot in ${green}/mnt/tmp/auto_chroot${colorOff}" 
+	echo -e "${purple}Downloading auto_chroot script from raw.githubusercontent.com/virtualdemon/archx/master/auto_chroot in ${green}/mnt/tmp/auto_chroot${colorOff}" 
 	sleep 3
-	curl -s -o /mnt/tmp/auto_chroot https://gitlab.com/virtualdemon/archx/raw/master/auto_chroot
+	curl -s -o /mnt/tmp/auto_chroot https://raw.githubusercontent.com/virtualdemon/archx/master/auto_chroot
 	chmod +x /mnt/tmp/auto_chroot
 fi
 
