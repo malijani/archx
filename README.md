@@ -10,7 +10,7 @@ Archx is a archlinux installer script which helps you to install archlinux while
 
 * Format your partitions with `mkfs` \(make file systems\) \(e.g. : `mkfs.ext4 /dev/sda4` or `mkswap /dev/sda7`\)
 
-* Mount the partitions on **/mnt **
+* Mount the partitions on **/mnt**
 
 > \(i.e. you have four partitions like below:
 
