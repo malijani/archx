@@ -102,8 +102,10 @@ cp -a /etc/pacman.d/mirrorlist /mnt/etc/pacman.d/mirrorlist
 # Generate fstab with device UUID : you can edit it in /etc/fstab
 genfstab -U -p /mnt > /mnt/etc/fstab && cat /mnt/etc/fstab
 
-# Download auto_chroot script
-if [[ $(ping -c 2 google.com) ]];then
+# Download auto_chroot script or check it existence
+if [ -e ./auto_chroot ];then
+  cp ./auto_chroot /mnt/tmp/auto_chroot
+elif [[ $(ping -c 2 google.com) ]];then
 	echo -e "${purple}Downloading auto_chroot script from gitlab.com/virtualdemon/archx/raw/master/auto_chroot in ${green}/mnt/tmp/auto_chroot${colorOff}" 
 	sleep 3
 	curl -s -o /mnt/tmp/auto_chroot https://gitlab.com/virtualdemon/archx/raw/master/auto_chroot
