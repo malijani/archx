@@ -33,7 +33,7 @@ Archx is a archlinux installer script which helps you to install archlinux while
 >
 > \)
 
-* Download **master branch** zipped file, **unzip** it, cwd to **archx-master** rand un **installer** script : \(or [download](https://github.com/virtualdemon/archx/archive/master.zip) it now and use it later\)
+* Download **master branch** zipped file, **unzip** it, cwd to **archx-master** and run **installer** script : \(or [download](https://github.com/virtualdemon/archx/archive/master.zip) it now and use it later\)
 
 `curl -Lsko master.zip https://github.com/virtualdemon/archx/archive/master.zip && unzip master.zip && cd archx-master && ./installer`
 
