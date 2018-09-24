@@ -1,5 +1,5 @@
 ## About Archx
-![ArchxAsciiLogo](https://gitlab.com/virtualdemon/archx/raw/master/screenshot/screenshot.png)
+![ArchxAsciiLogo](https://raw.githubusercontent.com/virtualdemon/archx/master/screenshot/screenshot.png)
 
 Archx is a ArchLinux installer script which helps you to install ArchLinux while your offline, further more, it uses **fakepkg** to extract packages from ArchLinux ISO you booted, in addition, it conveys all packages to **/mnt** , on the other hand you are not forced to use Pacstrap script thus you'll have all needed packages installed!
 
@@ -34,7 +34,7 @@ Archx is a ArchLinux installer script which helps you to install ArchLinux while
 Also if you need to do your chroot customizations automatically, you can run following command in chroot environment :
 > if you were connected to internet in install duration it's already downloaded at '/mnt/tmp/auto_chroot' so just run it : `/tmp/auto_chroot`
 
-    **`curl -s -o auto_chroot https://gitlab.com/virtualdemon/archx/raw/master/auto_chroot && chmod +x auto_chroot && ./auto_chroot`**
+    `curl -s -o auto_chroot https://gitlab.com/virtualdemon/archx/raw/master/auto_chroot && chmod +x auto_chroot && ./auto_chroot`
 
 7. When your customization finished you can `exit` and unmount devices with `umount -R /mnt` then `reboot` system to use your installed ArchLinux.
 
