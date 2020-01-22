@@ -1,6 +1,6 @@
 ## About Archx
 
-## ![ArchxAsciiLogo](https://raw.githubusercontent.com/virtualdemon/archx/master/screenshot/screenshot.png)
+## ![ArchxAsciiLogo](./screenshot/screenshot.png)
 
 Archx is a archlinux installer script which helps you to install archlinux while your **offline**, further more, it uses **fakepkg** to extract packages from archlinux ISO you booted, in addition, it conveys all packages to **/mnt** , on the other hand you are not forced to use pacstrap script thus you'll have all needed packages installed!
 
