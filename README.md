@@ -33,9 +33,9 @@ Archx is a archlinux installer script which helps you to install archlinux while
 >
 > \)
 
-* Download **master branch** zipped file, **unzip** it, change working directory to **archx-master** and run **installer** script : \(or [download](https://github.com/virtualdemon/archx/archive/master.zip) it now and use it later\)
+* Download **master branch** zipped file, **unzip** it, change working directory to **archx-master** and run **installer** script : \(or [download](https://github.com/malijani/archx/archive/master.zip) it now and use it later\)
 
-`curl -Lsko master.zip https://github.com/virtualdemon/archx/archive/master.zip && unzip master.zip && cd archx-master && ./installer`
+`curl -Lsko master.zip https://github.com/malijani/archx/archive/master.zip && unzip master.zip && cd archx-master/archx && ./installer`
 
 > You can read script's source before running it to see what will happen ... : `cat installer`  
 > Also if you need to do your chroot customizations automatically, you can run following command in chroot environment : `/tmp/auto_chroot`
